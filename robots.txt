@@ -1,0 +1,8 @@
+# Robots.txt for Bob Tseng Portfolio
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap location (to be added when deployed)
+# Sitemap: https://bobtseng.com/sitemap.xml

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzu-Hsin "Bob" Tseng</title>
+    <meta name="description" content="Building systems that work where theory meets chaos. Founder and Lead Engineer at TOONS Robotics.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="construction-overlay">
+        <div class="construction-dialog">
+            <div class="construction-title">Hey, I'm still working on this!</div>
+            <div class="construction-text">In the meantime, come grab a coffee with me!</div>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- ================================================================
+             HEADER - Name, Tagline, Positions, Headshot
+             Edit: Name (line 24), tagline (line 25), positions (lines 27-29)
+             ================================================================ -->
+        <header class="header">
+            <div class="header-info">
+                <h1>Tzu-Hsin "Bob" Tseng</h1>
+                <p class="tagline">Building systems that work where theory meets chaos</p>
+                <div class="positions">
+                    <span class="position">Founder and Lead Engineer, TOONS Robotics</span>
+                    <span class="position">Research Assistant, HCIS Lab, NYCU</span>
+                </div>
+            </div>
+            <div class="headshot-container">
+                <img src="me.jpg" alt="Tzu-Hsin Tseng" class="headshot">
+            </div>
+        </header>
+
+        <!-- ================================================================
+             CURRENT FOCUS - Main Projects (TROPO, CORE, LITHO)
+             Edit: Project title, subtitle, context, metrics, links
+             ================================================================ -->
+        <section class="section">
+            <h2 class="section-title">Current Focus</h2>
+
+            <!-- Project 1: TROPO -->
+            <div class="project-block">
+                <div class="project-title">TROPO</div>
+                <div class="project-subtitle">Autonomous aerial networks for coordination without infrastructure</div>
+                <div class="project-context">TOONS Robotics • Founder & Lead Engineer • 2025</div>
+                <ul class="metrics">
+                    <li>12 km range validated with LoRa mesh protocol</li>
+                    <li>30 cm positioning accuracy without GPS (UWB beacons)</li>
+                    <li>Field-tested 3-node autonomous topology optimization</li>
+                </ul>
+                <div class="project-links">
+                    <a href="tropo/">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- Project 2: CORE Platform -->
+            <div class="project-block">
+                <div class="project-title">CORE Platform</div>
+                <div class="project-subtitle">Open hardware standard enabling manipulation research</div>
+                <div class="project-context">HCIS Lab • Lead Developer • 2024-Present</div>
+                <ul class="metrics">
+                    <li>3 research groups actively building on platform</li>
+                    <li>70% reduction in end-effector integration time</li>
+                    <li>832-line specification with full standards</li>
+                </ul>
+                <div class="project-links">
+                    <a href="core-platform/">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- Project 3: LITHO -->
+            <div class="project-block">
+                <div class="project-title">LITHO</div>
+                <div class="project-subtitle">Commercial flight controllers for Taiwan UAV ecosystem</div>
+                <div class="project-context">TOONS Robotics • 2025</div>
+                <ul class="metrics">
+                    <li>F405-M flight controller manufactured and shipping</li>
+                    <li>60A 4-in-1 ESC in active production</li>
+                    <li>Full technical support and documentation</li>
+                </ul>
+                <div class="project-links">
+                    <a href="litho/">Learn More →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             TECHNICAL INTERESTS - Research Areas
+             Edit: Interest labels and descriptions
+             ================================================================ -->
+        <section class="section">
+            <h2 class="section-title">Technical Interests</h2>
+            <div class="interest-line">
+                <span class="interest-key">Coordination</span>
+                <span class="interest-separator">—</span>
+                <span class="interest-value">Distributed consensus under extreme bandwidth constraints</span>
+            </div>
+            <div class="interest-line">
+                <span class="interest-key">Navigation</span>
+                <span class="interest-separator">—</span>
+                <span class="interest-value">Multi-tier positioning for GPS-denied environments</span>
+            </div>
+            <div class="interest-line">
+                <span class="interest-key">Reliability</span>
+                <span class="interest-separator">—</span>
+                <span class="interest-value">Field validation methods for safety-critical systems</span>
+            </div>
+            <div class="interest-line">
+                <span class="interest-key">Hardware</span>
+                <span class="interest-separator">—</span>
+                <span class="interest-value">Power-efficient embedded systems for extended operation</span>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             SELECTED PROJECTS - Timeline of Key Work
+             Edit: Years, project names, and descriptions
+             ================================================================ -->
+        <section class="section">
+            <h2 class="section-title">Selected Projects</h2>
+
+            <!-- Hidden checkboxes for toggle state -->
+            <input type="checkbox" id="show-descriptions" class="toggle-checkbox">
+            <input type="checkbox" id="show-more-projects" class="toggle-checkbox">
+
+            <!-- Main Projects (always visible) -->
+            <div class="selected-projects">
+                <div class="project-item-wrapper">
+                    <div class="project-item">
+                        <span class="project-year">2025</span>
+                        <span class="project-name">Team 21196 Multi-Drone (SAFMC)</span>
+                    </div>
+                    <p class="project-description">Autonomous 4-drone formation system for surveillance with coordinated task allocation and real-time planning.</p>
+                </div>
+                <div class="project-item-wrapper">
+                    <div class="project-item">
+                        <span class="project-year">2024</span>
+                        <span class="project-name">Team 21196 VTOL Wing (CUADC)</span>
+                    </div>
+                    <p class="project-description">Autonomous VTOL aircraft with dual-mode flight control and precision landing for competition missions.</p>
+                </div>
+                <div class="project-item-wrapper">
+                    <div class="project-item">
+                        <span class="project-year">2023</span>
+                        <span class="project-name">HCIS Teleoperation</span>
+                    </div>
+                    <p class="project-description">Remote manipulation system with force feedback and predictive display compensation for network latency.</p>
+                </div>
+            </div>
+
+            <!-- Additional Projects (hidden by default) -->
+            <div class="more-projects">
+                <div class="project-item-wrapper">
+                    <div class="project-item">
+                        <span class="project-year">2023</span>
+                        <span class="project-name">Agricultural Drone — Outstanding Contribution Award</span>
+                    </div>
+                    <p class="project-description">Vision-based crop monitoring system with autonomous navigation for precision agriculture applications.</p>
+                </div>
+                <div class="project-item-wrapper">
+                    <div class="project-item">
+                        <span class="project-year">2022</span>
+                        <span class="project-name">Precision Agriculture — 3rd Place (2×)</span>
+                    </div>
+                    <p class="project-description">Autonomous ground robot for targeted crop treatment with computer vision and precision spraying control.</p>
+                </div>
+            </div>
+
+            <!-- Box-style toggle controls -->
+            <div class="project-toggles">
+                <label for="show-descriptions" class="toggle-box">Show details</label>
+                <label for="show-more-projects" class="toggle-box">Show more</label>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             RECOGNITION - Awards and Competition Results
+             Edit: Award titles, details, and years
+             ================================================================ -->
+        <section class="section">
+            <h2 class="section-title">Recognition</h2>
+            <div class="award">
+                <span class="award-title">Excellent Design Award</span>
+                <span class="award-detail">China University Aero Design Competition</span>
+                <span class="award-year">2024</span>
+            </div>
+            <div class="award">
+                <span class="award-title">2nd Place</span>
+                <span class="award-detail">Taiwan UAV Creative Design Competition</span>
+                <span class="award-year">2024</span>
+            </div>
+            <div class="award">
+                <span class="award-title">2nd Place</span>
+                <span class="award-detail">Control Systems Integration Competition</span>
+                <span class="award-year">2024</span>
+            </div>
+            <div class="award">
+                <span class="award-title">Outstanding Contribution</span>
+                <span class="award-detail">Agricultural Electronics Competition</span>
+                <span class="award-year">2023</span>
+            </div>
+            <div class="award">
+                <span class="award-title">3rd Place (2×)</span>
+                <span class="award-detail">Precision Agriculture Robotics Competition</span>
+                <span class="award-year">2023</span>
+            </div>
+            <div class="award">
+                <span class="award-title">Honorable Mention</span>
+                <span class="award-detail">Taiwan Innoserve Competition</span>
+                <span class="award-year">2022</span>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             CONTACT - Email Addresses
+             Edit: Email addresses
+             ================================================================ -->
+        <section class="section">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-item">
+                <span class="contact-key">School</span>
+                <span class="contact-value"><a href="mailto:tzshin@nycu.edu.tw">tzshin@nycu.edu.tw</a></span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-key">Work</span>
+                <span class="contact-value"><a href="mailto:bob.tseng@toonsrobotics.com">bob.tseng@toonsrobotics.com</a></span>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer">
+            © 2026 Tzu-Hsin Tseng
+        </div>
+
+    </div>
+</body>
+</html>

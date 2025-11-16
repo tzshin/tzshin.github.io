@@ -1,0 +1,527 @@
+/*
+ * Bob Tseng Portfolio - Stylesheet
+ *
+ * Typography System:
+ * 28px - h1 only
+ * 16px - section titles
+ * 15px - body text
+ * 13px - meta information
+ */
+
+:root {
+    --bg: #0d0d0d;
+    --surface: #1a1a1a;
+    --text-bright: #f0f0f0;
+    --text: #d4d4d4;
+    --text-dim: #a0a0a0;
+    --text-muted: #707070;
+    --accent: #6ba3d9;
+    --border: #2a2a2a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    filter: blur(6px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.construction-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.construction-dialog {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2.5rem 3rem;
+    text-align: center;
+    user-select: none;
+}
+
+.construction-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-bright);
+    margin-bottom: 0.5rem;
+}
+
+.construction-text {
+    font-size: 14px;
+    color: var(--text-dim);
+}
+
+/* Header */
+.header {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.header-info {
+    margin-right: 170px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-bright);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+.tagline {
+    color: var(--text);
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.positions {
+    color: var(--text-dim);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.position {
+    display: block;
+}
+
+.headshot-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 2rem;
+    aspect-ratio: 1;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.headshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sections */
+.section {
+    margin: 2.5rem 0;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-bright);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Current Focus */
+.project-block {
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    background: var(--surface);
+    border-radius: 4px;
+    border-left: 2px solid var(--border);
+}
+
+.project-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-bright);
+    margin-bottom: 0.2rem;
+}
+
+.project-subtitle {
+    color: var(--text);
+    margin-bottom: 0.3rem;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.project-context {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+}
+
+.metrics {
+    list-style: none;
+    font-size: 15px;
+}
+
+.metrics li {
+    color: var(--text);
+    padding: 0.2rem 0;
+    padding-left: 22px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.metrics li:before {
+    content: "•";
+    position: absolute;
+    left: 10px;
+    color: var(--text-muted);
+}
+
+.project-links {
+    margin-top: 0.8rem;
+    font-size: 13px;
+}
+
+.project-links a {
+    color: var(--accent);
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    color: var(--text-bright);
+    text-decoration: underline;
+}
+
+/* Technical Interests */
+.interest-line {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.interest-key {
+    width: 120px;
+    color: var(--text);
+    font-weight: 500;
+    flex-shrink: 0;
+    text-transform: uppercase;
+}
+
+.interest-separator {
+    color: var(--border);
+    margin: 0 0.4rem;
+}
+
+.interest-value {
+    color: var(--text-dim);
+}
+
+/* Selected Projects & Timeline */
+.selected-projects {
+    margin-bottom: 0;
+}
+
+/* More projects section - hidden by default */
+.more-projects {
+    display: none;
+    margin-top: 0;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--border);
+}
+
+/* Project wrapper for toggle functionality */
+.project-item-wrapper {
+    margin: 0.6rem 0;
+}
+
+.project-item {
+    display: block;
+    padding-left: 24px;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.project-item:before {
+    content: "•";
+    position: absolute;
+    left: 10px;
+    color: var(--text-muted);
+}
+
+.project-year {
+    color: var(--text-muted);
+    margin-right: 0.5rem;
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.project-name {
+    color: var(--text);
+}
+
+/* Project descriptions - hidden by default */
+.project-description {
+    display: none;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    margin-left: 50px;
+    color: var(--text-dim);
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Hidden checkboxes */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Toggle controls */
+.project-toggles {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.2rem;
+    font-size: 13px;
+}
+
+.toggle-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-left: 18px;
+}
+
+.toggle-box:hover {
+    color: var(--text-dim);
+}
+
+/* Minimal checkbox indicator */
+.toggle-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid var(--text-muted);
+    background: transparent;
+    border-radius: 1px;
+    transition: all 0.15s ease;
+}
+
+.toggle-box:hover::before {
+    border-color: var(--text-dim);
+}
+
+/* Checked state - minimal checkmark */
+#show-descriptions:checked ~ .project-toggles label[for="show-descriptions"]::before,
+#show-more-projects:checked ~ .project-toggles label[for="show-more-projects"]::before {
+    content: "✓";
+    border-color: var(--text);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    line-height: 1;
+}
+
+#show-descriptions:checked ~ .project-toggles label[for="show-descriptions"],
+#show-more-projects:checked ~ .project-toggles label[for="show-more-projects"] {
+    color: var(--text);
+}
+
+/* Show descriptions when toggle is active */
+#show-descriptions:checked ~ .selected-projects .project-description,
+#show-descriptions:checked ~ .more-projects .project-description {
+    display: block;
+}
+
+/* Show more projects when toggle is active */
+#show-more-projects:checked ~ .more-projects {
+    display: block;
+}
+
+/* Recognition */
+.award {
+    display: flex;
+    align-items: baseline;
+    margin: 0.6rem 0;
+    line-height: 1.5;
+}
+
+.award-title {
+    font-weight: 500;
+    color: var(--text);
+    margin-right: 0.6rem;
+    flex-shrink: 0;
+}
+
+.award-detail {
+    color: var(--text-dim);
+    font-size: 15px;
+}
+
+.award-year {
+    color: var(--text-muted);
+    margin-left: auto;
+    padding-left: 1rem;
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    flex-shrink: 0;
+}
+
+/* Contact */
+.contact-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin: 0.6rem 0;
+}
+
+.contact-key {
+    color: var(--text-muted);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 60px;
+    flex-shrink: 0;
+}
+
+.contact-value a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.contact-value a:hover {
+    color: var(--text-bright);
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    /* Reduce font sizes for mobile */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 14px;
+    }
+
+    .tagline {
+        font-size: 15px;
+    }
+
+    .project-title {
+        font-size: 15px;
+    }
+
+    .project-subtitle,
+    .project-name,
+    .award-detail,
+    .contact-value a {
+        font-size: 14px;
+    }
+
+    .project-context,
+    .project-year,
+    .award-year,
+    .contact-key,
+    .project-toggles,
+    .project-description {
+        font-size: 12px;
+    }
+
+    .metrics {
+        font-size: 14px;
+    }
+
+    .project-links {
+        font-size: 12px;
+    }
+
+    /* Container padding */
+    .container {
+        padding: 40px 16px;
+    }
+
+    /* Layout adjustments */
+    .header-info {
+        margin-right: 0;
+    }
+
+    .headshot-container {
+        position: static;
+        width: 120px;
+        height: 120px;
+        margin-top: 1.5rem;
+    }
+
+    .interest-line {
+        flex-direction: column;
+    }
+
+    .interest-separator {
+        display: none;
+    }
+
+    .award {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
+
+    .award-year {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .project-toggles {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: flex-start;
+    }
+}

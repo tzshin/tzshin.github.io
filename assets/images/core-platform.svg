@@ -1,0 +1,54 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f8f9fa"/>
+
+  <!-- Grid background -->
+  <defs>
+    <pattern id="grid2" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e8e8e8" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#grid2)"/>
+
+  <!-- Base Platform -->
+  <rect x="300" y="250" width="200" height="30" fill="#666" rx="4"/>
+
+  <!-- Modular Components -->
+  <rect x="320" y="200" width="60" height="50" fill="#0066CC" rx="4"/>
+  <rect x="390" y="200" width="60" height="50" fill="#4a90e2" rx="4"/>
+  <rect x="460" y="200" width="40" height="50" fill="#6ba3e5" rx="4"/>
+
+  <!-- Connectors -->
+  <circle cx="340" cy="270" r="5" fill="#333"/>
+  <circle cx="380" cy="270" r="5" fill="#333"/>
+  <circle cx="420" cy="270" r="5" fill="#333"/>
+  <circle cx="460" cy="270" r="5" fill="#333"/>
+
+  <!-- Tool attachments -->
+  <rect x="340" y="160" width="20" height="40" fill="#ff6b6b" rx="2"/>
+  <rect x="410" y="170" width="20" height="30" fill="#51cf66" rx="2"/>
+
+  <!-- Connection lines -->
+  <line x1="350" y1="200" x2="350" y2="270" stroke="#333" stroke-width="2"/>
+  <line x1="420" y1="200" x2="420" y2="270" stroke="#333" stroke-width="2"/>
+
+  <!-- Specification badge -->
+  <g transform="translate(600, 100)">
+    <rect x="0" y="0" width="120" height="40" fill="#0066CC" rx="20"/>
+    <text x="60" y="25" font-family="monospace" font-size="14" text-anchor="middle" fill="white">
+      832 LINES
+    </text>
+  </g>
+
+  <!-- BSD License badge -->
+  <g transform="translate(600, 150)">
+    <rect x="0" y="0" width="120" height="40" fill="#333" rx="20"/>
+    <text x="60" y="25" font-family="monospace" font-size="14" text-anchor="middle" fill="white">
+      BSD LICENSE
+    </text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="350" font-family="Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1a1a1a">
+    CORE Modular End-Effector Platform
+  </text>
+</svg>

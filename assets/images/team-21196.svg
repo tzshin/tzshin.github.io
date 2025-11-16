@@ -1,0 +1,59 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f8f9fb"/>
+
+  <!-- Stadium/Competition field background -->
+  <rect x="100" y="100" width="600" height="200" fill="#e8f4f8" rx="100" opacity="0.5"/>
+
+  <!-- Team members representation -->
+  <!-- Core technical team (center) -->
+  <g transform="translate(400, 200)">
+    <!-- Leader (Bob) -->
+    <circle cx="0" cy="0" r="25" fill="#0066CC"/>
+    <text x="0" y="5" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" fill="white" font-weight="bold">
+      LEAD
+    </text>
+
+    <!-- Core team members -->
+    <circle cx="-60" cy="-40" r="20" fill="#4a90e2"/>
+    <circle cx="60" cy="-40" r="20" fill="#4a90e2"/>
+    <circle cx="-60" cy="40" r="20" fill="#4a90e2"/>
+    <circle cx="60" cy="40" r="20" fill="#4a90e2"/>
+  </g>
+
+  <!-- Extended team members -->
+  <circle cx="250" cy="160" r="15" fill="#94b8d8" opacity="0.8"/>
+  <circle cx="550" cy="160" r="15" fill="#94b8d8" opacity="0.8"/>
+  <circle cx="250" cy="240" r="15" fill="#94b8d8" opacity="0.8"/>
+  <circle cx="550" cy="240" r="15" fill="#94b8d8" opacity="0.8"/>
+
+  <circle cx="200" cy="200" r="15" fill="#94b8d8" opacity="0.8"/>
+  <circle cx="600" cy="200" r="15" fill="#94b8d8" opacity="0.8"/>
+
+  <circle cx="300" cy="150" r="12" fill="#b8d4e8" opacity="0.6"/>
+  <circle cx="500" cy="150" r="12" fill="#b8d4e8" opacity="0.6"/>
+  <circle cx="300" cy="250" r="12" fill="#b8d4e8" opacity="0.6"/>
+  <circle cx="500" cy="250" r="12" fill="#b8d4e8" opacity="0.6"/>
+
+  <circle cx="350" cy="130" r="12" fill="#b8d4e8" opacity="0.6"/>
+  <circle cx="450" cy="130" r="12" fill="#b8d4e8" opacity="0.6"/>
+  <circle cx="350" cy="270" r="12" fill="#b8d4e8" opacity="0.6"/>
+  <circle cx="450" cy="270" r="12" fill="#b8d4e8" opacity="0.6"/>
+
+  <!-- Achievement badge -->
+  <g transform="translate(340, 50)">
+    <polygon points="60,0 70,20 90,20 75,35 80,55 60,40 40,55 45,35 30,20 50,20" fill="#ffd700"/>
+    <text x="60" y="22" font-family="Inter, sans-serif" font-size="10" text-anchor="middle" fill="#333" font-weight="bold">
+      AWARD
+    </text>
+  </g>
+
+  <!-- Stats -->
+  <text x="150" y="340" font-family="Inter, sans-serif" font-size="16" fill="#666">
+    20 Members • Cross-functional (ME/EE/CS) • 15 Months
+  </text>
+
+  <!-- Title -->
+  <text x="400" y="370" font-family="Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1a1a1a">
+    Team 21196 - Multi-Drone Competition
+  </text>
+</svg>

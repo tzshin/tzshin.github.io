@@ -1,0 +1,47 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f0f4f8"/>
+
+  <!-- Grid pattern background -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e1e8ed" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#grid)"/>
+
+  <!-- Central node -->
+  <circle cx="400" cy="200" r="30" fill="#0066CC" opacity="0.9"/>
+
+  <!-- Mesh network nodes -->
+  <circle cx="250" cy="150" r="25" fill="#4a90e2" opacity="0.8"/>
+  <circle cx="550" cy="150" r="25" fill="#4a90e2" opacity="0.8"/>
+  <circle cx="200" cy="280" r="25" fill="#4a90e2" opacity="0.8"/>
+  <circle cx="600" cy="280" r="25" fill="#4a90e2" opacity="0.8"/>
+  <circle cx="350" cy="320" r="25" fill="#4a90e2" opacity="0.8"/>
+  <circle cx="450" cy="80" r="25" fill="#4a90e2" opacity="0.8"/>
+
+  <!-- Connection lines -->
+  <line x1="400" y1="200" x2="250" y2="150" stroke="#0066CC" stroke-width="2" opacity="0.5"/>
+  <line x1="400" y1="200" x2="550" y2="150" stroke="#0066CC" stroke-width="2" opacity="0.5"/>
+  <line x1="400" y1="200" x2="200" y2="280" stroke="#0066CC" stroke-width="2" opacity="0.5"/>
+  <line x1="400" y1="200" x2="600" y2="280" stroke="#0066CC" stroke-width="2" opacity="0.5"/>
+  <line x1="400" y1="200" x2="350" y2="320" stroke="#0066CC" stroke-width="2" opacity="0.5"/>
+  <line x1="400" y1="200" x2="450" y2="80" stroke="#0066CC" stroke-width="2" opacity="0.5"/>
+
+  <!-- Mesh connections between nodes -->
+  <line x1="250" y1="150" x2="450" y2="80" stroke="#94b8d8" stroke-width="1" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="550" y1="150" x2="600" y2="280" stroke="#94b8d8" stroke-width="1" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="200" y1="280" x2="350" y2="320" stroke="#94b8d8" stroke-width="1" opacity="0.4" stroke-dasharray="5,5"/>
+
+  <!-- UAV icons (simplified) -->
+  <g transform="translate(390, 190)">
+    <rect x="0" y="0" width="20" height="20" fill="white" rx="2"/>
+    <line x1="10" y1="5" x2="10" y2="15" stroke="#0066CC" stroke-width="2"/>
+    <line x1="5" y1="10" x2="15" y2="10" stroke="#0066CC" stroke-width="2"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="370" font-family="Inter, sans-serif" font-size="24" font-weight="600" text-anchor="middle" fill="#1a1a1a">
+    CloudMesh Network Architecture
+  </text>
+</svg>
